@@ -1,0 +1,17 @@
+baseURL = "https://あとで自分のドメインを入れる/"
+languageCode = "ja"
+title = "鵜飼書店"
+theme = "PaperMod"
+
+[params]
+  author = "王ノ瀬"
+  description = "王ノ瀬律のポートフォリオサイト"
+  ShowReadingTime = false
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+
+[menu]
+  [[menu.main]]
+    name = "記事一覧"
+    url = "/posts/"
+    weight = 1

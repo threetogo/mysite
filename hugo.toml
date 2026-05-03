@@ -1,17 +1,45 @@
 baseURL = "https://あとで自分のドメインを入れる/"
 languageCode = "ja"
-title = "鵜飼書店"
+title = "透過水星"
 theme = "PaperMod"
 
 [params]
-  author = "王ノ瀬"
-  description = "王ノ瀬律のポートフォリオサイト"
+  author = "Ounose Arata"
+  description = "30代、乳がん再発予防治療をしながらの生活と読書日記"
   ShowReadingTime = false
   ShowShareButtons = false
   ShowPostNavLinks = true
+  defaultTheme = "light"
+  ShowAuthor = false
+  DateFormat = "2006.01.02"
 
-[menu]
-  [[menu.main]]
-    name = "記事一覧"
-    url = "/posts/"
-    weight = 1
+  # トップページを自己紹介+記事一覧にする
+  homeInfoParams.Title = "ここにひとこと"
+  homeInfoParams.Content = "ここに自己紹介文を書く"
+
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[markup.highlight]
+  noClasses = false
+
+[params.profileMode]
+  enabled = false
+
+[[menu.main]]
+  name = "about"
+  url = "/about/"
+  weight = 1
+
+[[menu.main]]
+  name = "nikki"
+  url = "/posts/"
+  weight = 2
+
+[[menu.main]]
+  name = "link"
+  url = "/link/"
+  weight = 3

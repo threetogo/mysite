@@ -1,0 +1,210 @@
+/* フォント設定 */
+body {
+  font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans",
+               "Noto Sans JP", "Meiryo", sans-serif;
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+/* 本文の読みやすい幅に調整 */
+.post-content {
+  max-width: 680px;
+}
+
+.post-content p {
+  margin-bottom: 1.8em;
+}
+
+/* リンクの色 */
+a {
+  color: #494ab4;
+}
+a:hover {
+  color: #cbaede;
+}
+
+/* 全体の余白 */
+.main {
+  max-width: 740px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* トップ画像 */
+.top-image {
+  width: 100%;
+  margin: 32px 0;
+}
+.top-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 最近の記事 */
+.recent-posts h2 {
+  font-size: 14px;
+  color: #999;
+  font-weight: normal;
+  margin-bottom: 16px;
+  letter-spacing: 0.05em;
+}
+.recent-posts ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.recent-posts li {
+  display: flex;
+  gap: 16px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+.recent-posts time {
+  color: #999;
+  font-size: 14px;
+  white-space: nowrap;
+}
+.recent-posts a {
+  color: #333;
+  text-decoration: none;
+}
+.recent-posts a:hover {
+  text-decoration: underline;
+}
+
+/* ヘッダー */
+.nav {
+  display: flex;
+  align-items: center;
+}
+.logo a,
+.logo span {
+  color: #333 !important;
+  font-weight: bold;
+}
+.menu {
+  display: flex;
+  gap: 16px;
+  margin-left: 24px;
+  list-style: none;
+  padding: 0;
+}
+.menu li::before {
+  display: none;
+}
+.site-subtitle {
+  font-size: 12px;
+  color: #aaa;
+  margin-left: 12px;
+  white-space: nowrap;
+}
+.logo-switches {
+  margin-left: auto;
+}
+
+/* 記事タイトルのサイズ調整 */
+.post-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* 強調テキスト */
+.post-content strong {
+  font-weight: bold;
+  background: linear-gradient(transparent 50%, rgba(203, 174, 222, 0.3) 50%);
+}
+
+/* トップへ戻るボタン */
+.top-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 36px;
+  background: none;
+  border: none;
+}
+
+.top-link svg {
+  display: none;
+}
+
+.top-link::after {
+  content: "∧";
+  font-size: 20px;
+  color: #d9a6b3;
+  line-height: 1;
+}
+
+.top-link:hover::after {
+  color: #333;
+}
+
+/* トップへ戻るボタンを常に表示 */
+.top-link {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+
+/* 背景色を全ページ統一（ダークモード対応） */
+:root {
+  --theme: #ffffff; !important;
+}
+
+/* 背景色と記事カードの色を反転 */
+.post-entry {
+  background-color: #f5f5f5;
+}
+
+/* ダークモード時のリンク色 */
+[data-theme="dark"] a {
+  color: #f0dce1;
+}
+
+[data-theme="dark"] .logo a {
+  color: #ffffff !important;
+}
+
+/* listページの背景色を白に */
+body.list {
+  background-color: #ffffff;
+}
+
+/* サブタイトル */
+.site-subtitle {
+  font-size: 14px;
+  color: #aaa;
+  margin-left: 16px;
+  margin-right: auto;
+  white-space: nowrap;
+}
+
+/* スマホのときは次の行に表示 */
+@media (max-width: 600px) {
+  .nav {
+    flex-wrap: wrap;
+  }
+  .site-subtitle {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 4px;
+    order: 10;
+    padding: 0 24px;
+  }
+}
+
+/* 記事内画像のサイズ調整 */
+.post-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 記事内リンクの末尾に記号を表示 */
+.post-content a::after {
+  content: " 🔗";
+  font-size: 0.8em;
+  opacity: 0.6;
+}

@@ -1,0 +1,21 @@
+{{ define "main" }}
+
+<!-- トップ画像 -->
+<div class="top-image">
+  <img src="/images/top.jpg" alt="トップ画像">
+</div>
+
+<!-- 最近の記事 -->
+<section class="recent-posts">
+  <h2>最近の記事</h2>
+  <ul>
+    {{ range first 3 (where .Site.RegularPages "Type" "posts") }}
+    <li>
+      <time>{{ .Date.Format "2006.01.02" }}</time>
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </li>
+    {{ end }}
+  </ul>
+</section>
+
+{{ end }}

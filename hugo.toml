@@ -1,10 +1,10 @@
 baseURL = "https://ounose.noor.jp/"
 languageCode = "ja"
-title = "透過水星"
+title = "練習"
 theme = "PaperMod"
 
 [params]
-  author = "Ounose Arata"
+  author = "Ounose Mituko"
   description = "30代、乳がん再発予防治療をしながらの生活と読書日記"
   ShowReadingTime = false
   ShowShareButtons = false
@@ -43,3 +43,6 @@ theme = "PaperMod"
   name = "link"
   url = "/link/"
   weight = 3
+
+[taxonomies]
+  tag = "tags"

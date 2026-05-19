@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>練習</title>
+    <title>衛星のポライトネス</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on 練習</description>
+    <description>Recent content on 衛星のポライトネス</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Fri, 01 May 2026 15:00:00 +0000</lastBuildDate>
@@ -112,11 +112,11 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/about/</guid>
       <description>&lt;h3 id=&#34;このサイトについて&#34;&gt;このサイトについて&lt;/h3&gt;
-&lt;p&gt;2025年12月から10年間の予定で始まった乳がんの再発予防治療について記録を残すためのブログです。&lt;br&gt;乳がんを傍らに生活するとはどういうことか？　を、自分自身が冷静に振り返るための記録。 &lt;br&gt;好きなものの話もたくさんします。&lt;br&gt;参考：https://threetogo.hatenadiary.jp/entry/2025/12/03/133626（１記事め）&lt;/p&gt;
+&lt;p&gt;2025年12月から10年間の予定で始まった乳がんの再発予防治療について記録を残すためのブログです。&lt;br&gt;乳がんを傍らに生活するとはどういうことか？　を、自分自身が冷静に振り返るための記録。 &lt;br&gt;好きなものの話もたくさんします。&lt;br&gt;参考： &lt;a href=&#34;https://ounose.noor.jp/posts/dzmuo8_644f4/&#34;&gt;https://ounose.noor.jp/posts/dzmuo8_644f4/&lt;/a&gt; （１記事め）&lt;/p&gt;
 &lt;h3 id=&#34;わたしの乳がん&#34;&gt;わたしの乳がん&lt;/h3&gt;
-&lt;p&gt;2025年8月　部分摘出＋同時再建&lt;br&gt;12月　放射線＋ブースト照射完走&lt;br&gt;12月　ホルモン剤療法開始&lt;br&gt;センチネルリンパ節への転移１のため、ホルモン剤療法は10年間の予定&lt;/p&gt;
+&lt;p&gt;2025年夏　部分切除＋同時再建&lt;br&gt;冬　放射線＋ブースト照射完走&lt;br&gt;冬　ホルモン剤療法開始&lt;br&gt;ホルモン剤療法は10年間が目標&lt;/p&gt;
 &lt;h3 id=&#34;わたし&#34;&gt;わたし&lt;/h3&gt;
-&lt;p&gt;王ノ瀬道子（Ounose Mituko）30代／読書と創作活動が好きな会社員。&lt;/p&gt;</description>
+&lt;p&gt;王ノ瀬道子（Ounose Mituko）30代／余暇は読書と執筆活動に充てたい会社員&lt;/p&gt;</description>
     </item>
     <item>
       <title>link</title>
@@ -124,9 +124,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/link/</guid>
       <description>&lt;h3 id=&#34;リンクについて&#34;&gt;リンクについて&lt;/h3&gt;
-&lt;p&gt;誘爆&lt;br&gt;http～～&lt;br&gt;個人サイト・同人サイトからのみリンクフリー&lt;br&gt;同好の方による好意からの紹介・引用目的以外での使用はできません&lt;/p&gt;
+&lt;p&gt;衛星のポライトネス&lt;br&gt;&lt;a href=&#34;http://ounose.noor.jp&#34;&gt;http://ounose.noor.jp&lt;/a&gt;&lt;br&gt;個人サイト・同人サイトのほか、読者や乳がんを扱う個人ブログからのみリンクフリー&lt;br&gt;同好の方による好意からの紹介・引用目的以外での使用はできません&lt;/p&gt;
 &lt;h3 id=&#34;ブックマーク&#34;&gt;ブックマーク&lt;/h3&gt;
-&lt;p&gt;- [ロリポップ！レンタルサーバー](&lt;a href=&#34;https://lolipop.jp/&#34;&gt;https://lolipop.jp/&lt;/a&gt;)&lt;br&gt;- [HUGO](&lt;a href=&#34;https://gohugo.io/&#34;&gt;https://gohugo.io/&lt;/a&gt;)&lt;br&gt;- [Git Hub](&lt;a href=&#34;https://github.com/&#34;&gt;https://github.com/&lt;/a&gt;)&lt;br&gt;- [unsplash](&lt;a href=&#34;https://unsplash.com/ja&#34;&gt;https://unsplash.com/ja&lt;/a&gt;)&lt;br&gt;&lt;/p&gt;</description>
+&lt;p&gt;準備中&lt;br&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

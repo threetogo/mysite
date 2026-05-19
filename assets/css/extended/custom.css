@@ -1,4 +1,4 @@
-/* フォント設定 */
+﻿/* フォント設定 */
 body {
   font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans",
                "Noto Sans JP", "Meiryo", sans-serif;
@@ -17,7 +17,7 @@ body {
 
 /* リンクの色 */
 a {
-  color: #494ab4;
+  color: #df456d;
 }
 a:hover {
   color: #cbaede;
@@ -44,7 +44,7 @@ a:hover {
 /* 最近の記事 */
 .recent-posts h2 {
   font-size: 14px;
-  color: #999;
+  color: #df456d;
   font-weight: normal;
   margin-bottom: 16px;
   letter-spacing: 0.05em;
@@ -112,41 +112,44 @@ a:hover {
 /* 強調テキスト */
 .post-content strong {
   font-weight: bold;
-  background: linear-gradient(transparent 50%, rgba(203, 174, 222, 0.3) 50%);
+  background: linear-gradient(transparent 50%, rgb(223, 69, 109, 0.2) 50%);
 }
 
 /* トップへ戻るボタン */
 .top-link {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #ffffff 0%, #399ebd 68%);
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 36px;
-  background: none;
-  border: none;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  visibility: visible !important;
+  opacity: 0.7 !important;
 }
-
+.top-link:hover {
+  opacity: 0.5 !important;
+}
 .top-link svg {
   display: none;
 }
-
 .top-link::after {
-  content: "∧";
-  font-size: 20px;
-  color: #d9a6b3;
-  line-height: 1;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f106";
+  font-size: 30px;
+  color: #ffffff;
 }
-
-.top-link:hover::after {
-  color: #333;
+@media screen and (min-width: 1024px) {
+  .top-link {
+    right: 16%;
+  }
 }
-
-/* トップへ戻るボタンを常に表示 */
-.top-link {
-  visibility: visible !important;
-  opacity: 1 !important;
-}
-
 
 /* 背景色を全ページ統一（ダークモード対応） */
 :root {
@@ -282,12 +285,13 @@ PS C:\Users\mi7a9\mysite>
 }
 .tags-label {
   font-size: 12px;
-  color: #bbb;
+  color: #df456d;
 }
 .tag-item {
   font-size: 12px;
-  color: #999;
-  background-color: #f0f0f0;
+  color: #df456d;
+  background-color: #fffff;
+  border: 1px solid #df456d;
   border-radius: 4px;
   padding: 2px 8px;
   text-decoration: none;
@@ -308,3 +312,10 @@ PS C:\Users\mi7a9\mysite>
   background-color: #444;
   color: #ccc;
 }
+
+/* サイトタイトルのフォント */
+.logo a,
+.logo span {
+  font-family: "Sawarabi Mincho", serif;
+}
+

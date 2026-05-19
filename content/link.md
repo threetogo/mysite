@@ -6,9 +6,9 @@ title = "link"
 
 ### リンクについて
 
-誘爆<br>http～～<br>個人サイト・同人サイトからのみリンクフリー<br>同好の方による好意からの紹介・引用目的以外での使用はできません
+衛星のポライトネス<br>http://ounose.noor.jp<br>個人サイト・同人サイトのほか、読者や乳がんを扱う個人ブログからのみリンクフリー<br>同好の方による好意からの紹介・引用目的以外での使用はできません
 
 ### ブックマーク
 
-\- \[ロリポップ！レンタルサーバー](https://lolipop.jp/)<br>- \[HUGO](https://gohugo.io/)<br>- \[Git Hub](https://github.com/)<br>- \[unsplash](https://unsplash.com/ja)<br>
+準備中<br>
 

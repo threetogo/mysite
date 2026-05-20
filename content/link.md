@@ -1,14 +1,10 @@
-+++
-
+﻿+++
 title = "link"
-
 +++
-
 ### リンクについて
-
-衛星のポライトネス<br>http://ounose.noor.jp<br>個人サイト・同人サイトのほか、読者や乳がんを扱う個人ブログからのみリンクフリー<br>同好の方による好意からの紹介・引用目的以外での使用はできません
+<img src="/images/banner.png" alt="banner" style="max-width:100%;height:auto;display:block;margin:12px 0;">
+衛星のポライトネス<br>
+https://ounose.noor.jp<br>個人サイト・同人サイトのほか、読書や乳がんを扱う個人ブログのみリンクフリー<br>同好の方による好意からの紹介・引用目的以外での使用はできません<br>
 
 ### ブックマーク
-
-準備中<br>
-
+<a href="https://peyopeyo.ltt.jp/ps/" target="_blank">創作ブログサーチ</a><br>

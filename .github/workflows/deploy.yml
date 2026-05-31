@@ -25,7 +25,10 @@ jobs:
         run: node get-content.js
         env:
           MICROCMS_API_KEY: ${{ secrets.MICROCMS_API_KEY }}
-
+      - name: Fetch pages from microCMS
+        run: node get-pages.js
+        env:
+          MICROCMS_API_KEY: ${{ secrets.MICROCMS_API_KEY }}
       - name: Build
         run: hugo --minify
 

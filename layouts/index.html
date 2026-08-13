@@ -1,21 +1,23 @@
-{{ define "main" }}
-
-<!-- トップ画像 -->
-<div class="top-image">
-  <img src="/images/top.jpg" alt="トップ画像">
-</div>
-
-<!-- 最近の記事 -->
-<section class="recent-posts">
-  <h2>最近の記事</h2>
-  <ul>
-    {{ range first 3 (where .Site.RegularPages "Type" "posts") }}
-    <li>
-      <time>{{ .Date.Format "2006.01.02" }}</time>
-      <a href="{{ .Permalink }}">{{ .Title }}</a>
-    </li>
-    {{ end }}
-  </ul>
+﻿{{ define "content" }}
+<section class="content">
+{{ range .Paginator.Pages }}
+      <article class="post">
+        <header class="post-header">
+        {{ partial "article_header" . }}
+        </header>
+        <div class="post-content">
+        {{ with .Description }}
+            {{ $.Scratch.Set "summary" (markdownify .) }}
+        {{ else }}
+            {{ $.Scratch.Set "summary" ((delimit (findRE "(<p.*?>.*?</p>\\s*)+" .Content) "[&hellip;] ") | plainify | truncate (default 200 .Site.Params.summary_length) (default " &hellip;" .Site.Params.text.truncated ) | replaceRE "&amp;" "&" | safeHTML) }}
+        {{ end }}
+        {{ $.Scratch.Get "summary" }}
+        </div>
+        <footer class="post-footer">
+          <a class="readmore" href="{{ .RelPermalink }}">{{ i18n "readMore" }}</a>
+        </footer>
+      </article>
+{{ end }}
+{{ partial "pagination" . }}
 </section>
-
 {{ end }}

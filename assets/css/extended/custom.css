@@ -348,3 +348,55 @@ PS C:\Users\mi7a9\mysite>
 
 
 
+
+/* トップ画像（小さめ） */
+.top-image-small {
+  width: 100%;
+  margin: 16px 0 32px;
+}
+.top-image-small img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+/* トップ記事一覧 */
+.home-posts {
+  margin-top: 16px;
+}
+.home-post-entry {
+  margin-bottom: 48px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid #eee;
+}
+.home-post-entry:last-child {
+  border-bottom: none;
+}
+.home-post-header {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.home-post-date {
+  font-size: 13px;
+  color: #aaa;
+  white-space: nowrap;
+}
+.home-post-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 0;
+}
+.home-post-title a {
+  color: #333;
+  text-decoration: none;
+}
+.home-post-title a:hover {
+  text-decoration: underline;
+}
+.home-post-content {
+  font-size: 16px;
+  line-height: 1.8;
+}

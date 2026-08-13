@@ -1,21 +1,13 @@
 baseURL = "https://ounose.noor.jp/"
 languageCode = "ja"
 title = "衛星のポライトネス"
-theme = "PaperMod"
+theme = "random3"
+
+paginate = 5
 
 [params]
-  author = "Ukai"
   description = "30代、乳がん再発予防治療をしながらの生活と読書日記"
-  ShowReadingTime = false
-  ShowShareButtons = false
-  ShowPostNavLinks = true
-  defaultTheme = "light"
-  ShowAuthor = false
-  DateFormat = "2006.01.02"
-
-  # トップページを自己紹介+記事一覧にする
-  homeInfoParams.Title = "ここにひとこと"
-  homeInfoParams.Content = "ここに自己紹介文を書く"
+  author = "Ukai"
 
 [markup]
   defaultMarkdownHandler = "goldmark"
@@ -26,23 +18,6 @@ theme = "PaperMod"
 [markup.highlight]
   noClasses = false
 
-[params.profileMode]
-  enabled = false
-
-[[menu.main]]
-  name = "about"
-  url = "/about/"
-  weight = 1
-
-[[menu.main]]
-  name = "nikki"
-  url = "/posts/"
-  weight = 2
-
-[[menu.main]]
-  name = "link"
-  url = "/link/"
-  weight = 3
-
 [taxonomies]
   tag = "tags"
+  category = "categories"

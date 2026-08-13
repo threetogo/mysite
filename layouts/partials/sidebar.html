@@ -1,0 +1,48 @@
+<aside class="page-sidebar">
+{{ $root :=.Site.BaseURL }}
+    <nav class="widget">
+      <h3>Site</h3>
+      <ul>
+        <li><a href="/about/">衛星のポライトネス</a></li>
+        <li><a type="application/rss+xml" href="{{ .Site.LanguagePrefix }}/index.xml" rel="alternate">RSS Feed</a></li>
+      </ul>
+    </nav>
+    <nav class="widget">
+      <h3>Booklist</h3>
+      <ul>
+        {{ range .Site.Data.Booklist }}
+          <li><a href="https://expd.web.fc2.com/">Booklist</a></li>
+        {{ end }}
+      </ul>
+    </nav>
+    <nav class="widget">
+      <h3>Tags</h3>
+      <ul class="tagcloud">
+      {{ if gt (len $.Site.Taxonomies.tags) 0 }}
+      {{ $largestFontSize := 180 }}
+      {{ $smallestFontSize := 85 }}
+      {{ $fontSpread := sub $largestFontSize $smallestFontSize }}
+      {{ $max := add (len (index $.Site.Taxonomies.tags.ByCount 0).Pages) 1 }}
+      {{ $min := len (index $.Site.Taxonomies.tags.ByCount.Reverse 0).Pages }}
+      {{ $spread := sub $max $min }}
+      {{ $fontStep := div $fontSpread $spread }}
+          {{ range $name, $taxonomy := $.Site.Taxonomies.tags }}
+              {{ $count := len $taxonomy.Pages }}
+              {{ $weigth := div (sub (math.Log $count) (math.Log $min)) (sub (math.Log $max) (math.Log $min)) }}
+              {{ $currentFontSize := (add $smallestFontSize (mul (sub $largestFontSize $smallestFontSize) $weigth) ) }}
+              <li><a href="{{ "tags/" | relLangURL }}{{ $name | urlize }}" style="font-size:{{$currentFontSize}}%">{{ $name }}</a></li>
+          {{ end }}
+      {{ end }}
+      </ul>
+    </nav>
+    <nav class="widget">
+      <h3>Thanks</h3>
+      <ul>
+        {{ range .Site.Data.Favorite }}
+          <li><a href="https://peyopeyo.ltt.jp/ps/">創作ブログサーチ</a></li>
+          <li><a href="https://yoakemae.blue/c1/">夜明けまえ、まだ誰もいない</a></li>
+
+        {{ end }}
+      </ul>
+    </nav>
+</aside>

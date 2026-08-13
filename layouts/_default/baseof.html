@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="{{ .Lang }}">
+
+  <head>
+  {{ block "headers" . }}
+    <meta charset="utf-8" />
+    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+    <link rel="preload stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/skeleton.css" />
+    <link rel="preload stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/main.css" />
+    <!--<link rel="preload stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/pygments.css" />-->
+    
+    {{ if .Site.Params.spamtrap }}
+     <a href="{{ .Site.Params.spamtrap }}"></a>
+    {{ end }}
+
+    <link rel ="alternate" type="application/rss+xml"
+                           title="{{ .Site.Title }} — Flux RSS"
+                           href="{{ .Site.LanguagePrefix }}/index.xml" /> 
+
+    <!--[if lte IE 8]><script src="{{ .Site.BaseURL }}/theme/js/html5shiv.js"></script><![endif]-->
+    <meta name="viewport" content="initial-scale=1.0, width=device-width, user-scalable=no" />
+
+  {{ end }}
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+    <style>
+      body, h1, h2, h3, p, a, li {
+        font-family: "Zen Maru Gothic", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header class="page-head">
+      
+        <h1>
+          <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+        </h1>
+      </header>
+
+      <div class="page-content">
+        {{ block "content" . }}
+        {{ end }}
+      </div>
+
+      {{ partial "sidebar" . }}
+
+
+    {{ if .Site.Params.HugoFooter }}
+      <footer class="page-footer">
+
+       <p>{{ i18n "CompiledWith" }} <a href="http://gohugo.io">Hugo</a>, {{ i18n "Using" }} <a href="https://github.com/22decembre/random3">Random3</a>, {{ i18n "By" }} <a href="https://www.22decembre.eu/">Stéphane 22Decembre</a>.
+       </p>
+
+      </footer>
+      {{ end }}
+    </div>
+  </body>
+</html>

@@ -109,11 +109,14 @@ a {
   }
 
 img, table, pre, video {
-    margin: 1em .5em;
-    padding: .25em;
-    border: thin solid silver;
-    overflow: auto;
-}
+      margin: 1em .5em;
+      padding: .25em;
+  }
+.post-content img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+  }
 
 figure {
     display: block;

@@ -11,7 +11,7 @@
       <h3>Booklist</h3>
       <ul>
         {{ range .Site.Data.Booklist }}
-          <li><a href="https://expd.web.fc2.com/">Booklist</a></li>
+          <li><a href="https://expd.web.fc2.com/" target="_blank">Booklist</a></li>
         {{ end }}
       </ul>
     </nav>
@@ -39,10 +39,7 @@
       <h3>Thanks</h3>
       <ul>
         {{ range .Site.Data.Favorite }}
-          <li><a href="https://peyopeyo.ltt.jp/ps/">創作ブログサーチ</a></li>
-          <li><a href="https://yoakemae.blue/c1/">夜明けまえ、まだ誰もいない</a></li>
-
-        {{ end }}
+        <li><a href="{{ .url }}" target="_blank">{{ .name }}</a></li>        {{ end }}
       </ul>
     </nav>
 </aside>

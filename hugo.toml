@@ -6,7 +6,7 @@ theme = "random3"
 paginate = 5
 
 [params]
-  description = "30代、乳がん再発予防治療をしながらの生活と読書日記"
+  description = "乳がん治療をしながら働き、本を読み、文章を書いている30代の記録。読書日記と創作活動、治療のある日常について、自分のペースで書き続ける10年日記。"
   author = "Ukai"
 
 [markup]
